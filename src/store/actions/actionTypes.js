@@ -6,3 +6,5 @@ export const MULTIPLY = "MULTIPLY";
 export const CLEAR = "CLEAR";
 export const EQUALS = "EQUALS";
 export const DECIMAL = "DECIMAL";
+
+export const SEARCH = "SEARCH";

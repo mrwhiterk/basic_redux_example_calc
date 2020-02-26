@@ -5,6 +5,7 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose, combineReducers } from "redux";
 import calculatorReducer from "./store/reducers/calculator";
+import movieReducer from "./store/reducers/movieReducer";
 import thunk from "redux-thunk";
 
 const composeEnhancers =
@@ -13,7 +14,8 @@ const composeEnhancers =
     : null || compose;
 
 const rootReducer = combineReducers({
-  calculator: calculatorReducer
+  calculator: calculatorReducer,
+  movie: movieReducer
 });
 
 const store = createStore(
